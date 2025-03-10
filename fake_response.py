@@ -7,7 +7,7 @@ def request(flow: http.HTTPFlow) -> None:
 import json
 
 def response(flow: http.HTTPFlow) -> None:
-    if "http://cms-api.pacific-league.jp/api/game_schedule/?team=1992001&year=2026" in flow.request.pretty_url:
+    if "http://cms-api.pacific-league.jp/api/game_schedule/?team=1992001&year=2027" in flow.request.pretty_url:
         fake_data = [
             {
                 "gameCode": "32680",
